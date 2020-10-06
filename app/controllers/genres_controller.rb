@@ -17,7 +17,7 @@ class GenresController < ApplicationController
   end
 
   def update
-    @genre = Genre.update(artist_params(:name))
+    @genre = Genre.update(genre_params(:name))
     redirect_to genre_path(@genre)
   end
 
