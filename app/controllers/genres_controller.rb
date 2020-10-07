@@ -1,5 +1,9 @@
 class GenresController < ApplicationController
 
+  def index
+    @genre = Genre.all
+  end
+
   def new
     @genre = Genre.new
   end
